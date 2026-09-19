@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4 - Gộp ô bảng</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 45px;
+            height: 45px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bảng gốc 5x5</h2>
+    <table>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+        <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+        <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+    </table>
+
+    <h2>a. Gộp các ô 2-3-4 (colspan="3")</h2>
+    <table>
+        <tr>
+            <td>1</td>
+            <td colspan="3">2 - 3 - 4</td>
+            <td>5</td>
+        </tr>
+        <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+        <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+        <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+    </table>
+
+    <h2>b. Gộp các ô 9-14-19 (rowspan="3")</h2>
+    <table>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="3">9<br>14<br>19</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>20</td>
+        </tr>
+        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+    </table>
+
+    <h2>c. Gộp các ô 1-2, 18-23 và 9-10-14-15</h2>
+    <table>
+        <tr>
+            <td colspan="2">1 - 2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td colspan="2" rowspan="2">9 - 10<br>14 - 15</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td rowspan="2">18<br>23</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+</body>
+</html>

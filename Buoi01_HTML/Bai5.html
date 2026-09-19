@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form - Microsoft Internet Explorer</title>
+    <style>
+        body {
+            background-color: #FFFFE0;
+            font-family: Arial, sans-serif;
+            color: #000080;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #000080;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .form-row {
+            margin-bottom: 12px;
+        }
+
+        textarea {
+            width: 250px;
+            height: 60px;
+        }
+
+        select, input[type="text"] {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sample Stock Survey</h2>
+
+    <form action="https://httpbin.org/anything" method="post">
+        <div class="section-title">Describe your investment experience</div>
+        <div class="form-row">
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">beginner</label>
+
+            <input type="radio" id="intermediate" name="experience" value="intermediate" checked>
+            <label for="intermediate">intermediate</label>
+
+            <input type="radio" id="expert" name="experience" value="expert">
+            <label for="expert">expert</label>
+        </div>
+
+        <div class="section-title">Types of Investments you make</div>
+        <div class="form-row">
+            <input type="checkbox" id="stocks" name="investments" value="stocks" checked>
+            <label for="stocks">Individual Stocks</label>
+
+            <input type="checkbox" id="options" name="investments" value="options">
+            <label for="options">Options</label>
+
+            <input type="checkbox" id="funds" name="investments" value="funds" checked>
+            <label for="funds">Mutual Funds</label>
+        </div>
+
+        <div class="form-row">
+            <label for="buy_method"><strong>How do you buy your stocks?</strong></label>
+            <select name="buy_method" id="buy_method">
+                <option value="online">1) On-Line</option>
+                <option value="touchtone">2) Touch Tone Trading</option>
+                <option value="broker">3) Broker Assisted</option>
+                <option value="other" selected>4) Other</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="hot_pick"><strong>What is your hot stock pick for?</strong></label>
+            <input type="text" id="hot_pick" name="hot_pick">
+        </div>
+
+        <div class="form-row">
+            <label for="advice"><strong>Any Investment Advice for others?</strong></label><br>
+            <textarea id="advice" name="advice"></textarea>
+        </div>
+
+        <div class="form-row">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

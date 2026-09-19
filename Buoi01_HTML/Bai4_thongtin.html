@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4 - Thông tin sinh viên</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        td, th {
+            border: 1px solid #777777;
+            padding: 8px 12px;
+        }
+
+        .header-title {
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .avatar-cell {
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            background-color: #f9f9f9;
+        }
+
+            .avatar-cell img {
+                width: 170px;
+                display: block;
+                margin: 0 auto;
+            }
+
+        .field-label {
+            font-weight: normal;
+        }
+
+        .field-value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5" class="header-title">THÔNG TIN SINH VIÊN</th>
+        </tr>
+        <tr>
+            <td rowspan="4" class="avatar-cell">
+                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Ảnh đại diện">
+            </td>
+            <td class="field-label">HỌ VÀ TÊN</td>
+            <td colspan="3" class="field-value">Nguyễn Văn An</td>
+        </tr>
+        <tr>
+            <td class="field-label">MÃ SỐ SINH VIÊN</td>
+            <td class="field-value">19DH110110</td>
+            <td class="field-label">GIỚI TÍNH</td>
+            <td class="field-value">Nam</td>
+        </tr>
+        <tr>
+            <td class="field-label">EMAIL</td>
+            <td class="field-value">an@gmail.com</td>
+            <td class="field-label">SỐ ĐIỆN THOẠI</td>
+            <td class="field-value">0122333444</td>
+        </tr>
+        <tr>
+            <td class="field-label">SỞ THÍCH</td>
+            <td colspan="3" class="field-value">VIẾT CHƯƠNG TRÌNH</td>
+        </tr>
+    </table>
+</body>
+</html>
